@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Vishwakarma</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    
+    <style>
+        body{
+            background-color: rgb(0, 22, 35);
+        }
+        .header{
+            background-image: url("japan.jpg");
+            background-position: top;
+            background-size: cover;
+            height: 335px;
+        }
+        .name{
+            padding-left: 100px;
+            color: rgb(229, 159, 255);
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 3px;
+            font-size: 40px;
+        }
+        .profile{
+            border-radius: 50%;
+            height: 200px;
+            margin-top: 50px;
+            margin-left: 130px;
+        }
+
+        ul{
+            font-size: 18px;
+            list-style-type: none;
+            font-family: 'Amatic SC', cursive;
+            margin: 0;
+            padding: 0;
+            padding-left: 350px;
+            overflow: hidden;
+            background-color: rgb(0, 22, 35);
+        }
+
+        li{
+            float: left;
+        }
+
+        li a{
+            display: block;
+            color: rgb(229, 159, 255);
+            text-align: center;
+            letter-spacing: 5px;
+            padding: 12px 20px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: black;
+            color: white;
+            background-image: url("ghost.jpg");
+            background-position: center;
+            background-size: 80px;
+            background-repeat: no-repeat;
+
+        }
+        #About{
+            background-image: url("abc.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 52px;
+            padding-left: 100px;
+            line-height: 40px;
+            font-family: "orbitron", sans-serif;
+            font-family: 'Amatic SC', cursive;
+            font-size: 25px;
+            letter-spacing: 2px;
+            color: rgb(229, 159, 255);
+        }
+        #About:hover{
+            color: rgb(33, 189, 33);
+        }
+        #Education{
+            background-image: url("deer.jpg");
+            background-position: bottom;
+            background-size: cover;
+            color: rgb(229, 159, 255);
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 2px;
+            font-size: 25px;
+            text-align: center;
+            line-height: 278px;
+            height: 278px;
+        }
+        #Technical_Skills{
+            background-image: url("long\ exposure.jfif");
+            background-position: center;
+            background-size: cover;
+            line-height: 40px;
+            color: rgb(229, 159, 255);
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 2px;
+            font-size: 25px;
+            padding: 65px;
+            padding-left: 100px;
+        }
+        #Personal_Skills{
+            background-image: url("dark.jpg");
+            background-position: center;
+            background-size: cover;
+            line-height: 40px;
+            color: rgb(229, 159, 255);
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 2px;
+            font-size: 25px;
+            padding: 65px;
+            padding-left: 100px;
+        }
+        #b:hover{
+            color:black;
+            background-color: rgb(255, 82, 78);
+        }
+        .a:hover{
+            padding-right: 190px;
+        }
+        .b:hover{
+            padding-right: 210px;
+        }
+        .c:hover{
+            padding-right: 300px;
+        }
+        .d:hover{
+            padding-right: 200px;
+        }
+        #a:hover{
+            color: black;
+            background-color: rgb(151, 164, 110);
+        }
+        .e:hover{
+            padding-right: 50px;
+        }
+        .f:hover{
+            padding-right: 195px;
+        }
+        .g:hover{
+            padding-right: 245px;
+        }
+        .h:hover{
+            padding-right: 190px;
+        }
+        #Interests{
+            color: rgb(229, 159, 255);
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 2px;
+            font-size: 25px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #Basketball{
+            margin-top: 10px;
+            background-image: url("Basket3.jpg");
+            background-position: center;
+            background-size: cover;
+            text-align: right;
+            padding: 40px;
+            padding-right: 100px;
+        }
+        #Investing{
+            background-image: url("Investing2.jpg");
+            background-position: center;
+            background-size: cover;
+            text-align: right;
+            padding: 40px;
+            padding-right: 100px;
+        }
+        #Reading{
+            background-image: url("books.jpg");
+            background-position: center;
+            background-size: cover;
+            text-align: right;
+            padding: 40px;
+            padding-right: 113px;
+        }
+        #Contact{
+            line-height: 40px;
+            color: rgb(229, 159, 255);
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 2px;
+            font-size: 25px;
+            padding: 30px 100px;
+            padding-bottom: 20px;
+        }
+        #phone{
+            margin-left: 600px;
+        }
+        #last{
+            text-align: center;
+            background-image: url("last.jpg");
+            color: rgb(229, 159, 255);
+            font-family: 'Amatic SC', cursive;
+            letter-spacing: 2px;
+            font-size: 25px;
+            background-position: bottom;
+            background-size: cover;
+        }
+        #last:hover{
+            background-image: url("last1.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div id="Home">
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Technical_Skills">Technical Skills</a></li>
+            <li><a href="#Personal_Skills">Personal Skills</a></li>
+            <li><a href="#Interests">Interests</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <img class="profile" src="Profile_picture.jpg" alt="Profile Picture of Rahul"><br>
+        <span class="name">Rahul Vishwakarma</span>
+    </header>
+
+    <div class="text2" id="About">
+        <p>&lt; Hello &gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&gt;&emsp; if (You don't know me) <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&gt;&emsp;&emsp;&emsp;&emsp; cout >> " I'm a bit interested in philosophy " ; <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&gt;&emsp; if (You love to code)<br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&gt;&emsp;&emsp;&emsp;&emsp; cout >> " I'm the right person to talk to " ;<br>
+        </p>
+    </div>
+
+    <div id="Education">
+        Education doesn't matter, you should just know how to code. 
+    </div>
+
+    <div id="Technical_Skills">
+        Technical Skills:<br>
+        <span id="a" class="e">~ Programming languages: java, C++, Python<br></span>
+        <span id="a" class="f">~ Web Development: HTML, CSS<br></span>
+        <span id="a" class="g">~ A little about hacking<br></span>
+        <span id="a" class="h">~ I can shut down a computer</span>
+    </div>
+
+    <div id="Personal_Skills">
+        Personal Skills:<br>
+        <span id="b" class="a">~ Interpersonal Skills : 85%<br></span>
+        <span id="b" class="b">~ Team Collaboration: 80%<br></span>
+        <span id="b" class="c">~ Creativity: 90%<br></span>
+        <span id="b" class="d">~ Planning & Strategy: 90%</span>
+    </div>
+
+    <div id="Interests">
+        Interests<br>
+        <div id="Basketball">
+            Basketball
+        </div>
+        <div id="Investing">
+            Investing
+        </div>
+        <div id="Reading">
+            Reading
+        </div>
+    </div>
+
+    <div id="Contact">
+        Email: rahulvishwa1403@gmail.com<br>
+        Phone: +91-9664026341
+    </div>
+
+    <div id="last">
+        <a href="#Home" style="text-decoration: none;">Home</a>
+    </div>
+
+</body>
+</html>
