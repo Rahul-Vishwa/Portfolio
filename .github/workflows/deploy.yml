@@ -3,7 +3,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - master
+      - master  # Default branch
 
 jobs:
   build-deploy:
@@ -16,10 +16,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18  # Use a stable version of Node.js
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli  # Install Angular CLI globally
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install  # Install project dependencies
 
       - name: Build Angular Project
         run: ng build --configuration=production --output-path=dist/browser --base-href="/Portfolio/"
