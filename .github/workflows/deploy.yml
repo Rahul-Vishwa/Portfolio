@@ -3,26 +3,32 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - master  # Runs on push to main branch
+      - master 
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 18 
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install 
 
-      - name: Build Angular App
-        run: ng build --output-path dist/browser --base-href /Portfolio/
+      - name: Build Angular Project
+        run: ng build --configuration=production --base-href /Portfolio/  
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/portfolio --no-silent
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist/browser  
+          token: ${{ secrets.GH_PAT }}  # Use built-in GitHub token
+          clean: true
+          force: true
