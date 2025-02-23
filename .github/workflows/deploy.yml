@@ -25,7 +25,10 @@ jobs:
         run: npm install  # Install project dependencies
 
       - name: Build Angular Project
-        run: ng build --configuration=production --output-path=dist/browser --base-href="/Portfolio/"
+        run: ng build --configuration=production --output-path=dist/portfolio --base-href="/Portfolio/"
+
+      - name: Copy index.html to 404.html
+        run: cp dist/portfolio/index.html dist/portfolio/404.html
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
