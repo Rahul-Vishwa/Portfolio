@@ -32,3 +32,6 @@ jobs:
         with:
           branch: gh-pages
           folder: dist/browser
+          token: ${{secrets.GH_PAT}}
+          clean: true
+          force: true
