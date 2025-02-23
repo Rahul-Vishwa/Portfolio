@@ -3,7 +3,7 @@ name: Deploy Angular to GitHub Pages
 on:
   push:
     branches:
-      - master 
+      - main  # Change to 'master' if your default branch is 'master'
 
 jobs:
   build-deploy:
@@ -16,7 +16,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18 
+          node-version: 18
+
+      - name: Install Angular CLI
+        run: npm install -g @angular/cli
 
       - name: Install Dependencies
         run: npm install 
@@ -28,7 +31,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: dist/browser  
-          token: ${{ secrets.GH_PAT }}  # Use built-in GitHub token
+          folder: dist/browser 
+          token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
           force: true
