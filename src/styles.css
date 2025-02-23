@@ -38,3 +38,17 @@ body{
   font-weight: 400;
   font-style: normal;
 }
+
+.fira-code-bolder {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.fira-code-normal {
+  font-family: "Fira Code", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
